@@ -7,21 +7,30 @@ If http router library cannot be found check this article for instrunctions on h
 https://wilsonmar.github.io/golang/
 
 How to use:
+
 Run the code:
+
   go run simpleapi.go
 
 Open a new terminal window, and test it by using curl:
 
+
   PUT(CREATE/UPDATE)
+  
   curl -X PUT localhost:8083/entry/first/hello
+  
   curl -X PUT localhost:8083/entry/second/hi
   
   GET
+  
   curl localhost:8083/list
+  
   curl localhost:8083/entry/first
+  
   curl localhost:8083/entry/second
 
   DELETE
+  
   curl -X DELETE localhost:8083/entry/first
 
 
